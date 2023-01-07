@@ -1,9 +1,10 @@
-﻿#include <iostream>
-#include "GLFW/glfw3.h"
+﻿#include "Engine/engine.h"
+#include <iostream>
 
-using namespace std;
-
-int main()
+int main(int argc, char **argv)
 {
+	engine::Engine engine;
+	engine.Run(argc, argv);
+
 	return 0;
 }
